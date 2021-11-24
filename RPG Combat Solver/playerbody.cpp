@@ -1,24 +1,19 @@
 //playerbody.cpp
 
-#include "basicbody.cpp"
-#include <string>
+#include "playerbody.h"
+using body::playerbody;
 
-class playerbody : basicbody {
-private:
-	std::string name;
-public:
-	//Basic Constructor
-	playerbody(){}
+//Basic Constructor
+playerbody::playerbody() {}
 	
-	//Advanced Constructor
-	playerbody(std::string setname, int hp, int def, int atk) {
-		name = setname;
-		health = hp;
-		defense = def;
-		attack = atk;
-		state = true;
-	}
+//Advanced Constructor
+playerbody::playerbody(std::string setname, int hp, int def, int atk) {
+	name = setname;
+	health = hp;
+	defense = def;
+	attack = atk;
+	state = true;
+}
 
-	//Basic Destructor
-	~playerbody() {}
-};
+//Basic Destructor
+playerbody::~playerbody() {}
