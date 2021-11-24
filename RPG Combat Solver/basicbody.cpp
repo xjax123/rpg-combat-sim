@@ -1,5 +1,4 @@
 //basicbody.h
-#pragma once
 
 #include "basicbody.h"
 using body::basicbody;

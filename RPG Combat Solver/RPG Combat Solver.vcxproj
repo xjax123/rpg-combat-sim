@@ -151,7 +151,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="basicattack.h" />
     <ClInclude Include="basicbody.h" />
+    <ClInclude Include="combat.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="playerbody.h" />
     <ClInclude Include="Resource.h" />
@@ -161,6 +163,7 @@
   <ItemGroup>
     <ClCompile Include="basicattack.cpp" />
     <ClCompile Include="basicbody.cpp" />
+    <ClCompile Include="combat.cpp" />
     <ClCompile Include="playerbody.cpp" />
     <ClCompile Include="RPG Combat Solver.cpp" />
   </ItemGroup>

@@ -19,31 +19,52 @@
     <Filter Include="Source Files\Attacks">
       <UniqueIdentifier>{f0a1cf47-f7d6-4394-98eb-51c59df76968}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Body">
+      <UniqueIdentifier>{c6e887ec-6617-486e-8d42-93a966952235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\misc">
+      <UniqueIdentifier>{7977ae45-6ddf-4925-b54d-8d4b0255649c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\attack">
+      <UniqueIdentifier>{0be3708b-11ef-4d43-b8ab-058961a5c15a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{ad5357ea-c0be-4613-9960-b8e37e0677da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Combat">
+      <UniqueIdentifier>{2b43c139-e015-496c-b00f-edbcaebb715b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{331000b7-5b25-4450-86c0-39459f287ecb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RPG Combat Solver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="basicbody.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Body</Filter>
     </ClInclude>
     <ClInclude Include="playerbody.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="basicattack.h">
+      <Filter>Header Files\attack</Filter>
+    </ClInclude>
+    <ClInclude Include="RPG Combat Solver.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="combat.h">
+      <Filter>Header Files\Main</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RPG Combat Solver.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="basicbody.cpp">
       <Filter>Source Files\Bodies</Filter>
     </ClCompile>
@@ -52,6 +73,12 @@
     </ClCompile>
     <ClCompile Include="basicattack.cpp">
       <Filter>Source Files\Attacks</Filter>
+    </ClCompile>
+    <ClCompile Include="RPG Combat Solver.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="combat.cpp">
+      <Filter>Source Files\Main\Combat</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

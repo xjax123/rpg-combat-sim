@@ -1,25 +1,37 @@
 //basicattack.cpp
-#pragma once
 
-#include "basicbody.cpp"
+#include "basicattack.h"
 
-//template class, provides basic utilities for constructing attacks
-class attack {
-protected:
-	int damage; //damage per hit
-	int number; //number of hits
-	
-	void setDamage(int dam) {
+using attack::basicattack;
 
+void basicattack::setDamage(int dam) {
+	if (dam > 0) {
+		damage = dam;
 	}
-
-	void setNumber(int num) {
-
+	else {
+		damage = 0;
 	}
-public:
-	//basic constructor/destructor
-	attack() {}
-	~attack() {}
-	
+}
 
-};
+void basicattack::setNumber(int num) {
+
+}
+
+basicattack::basicattack() {}
+basicattack::~basicattack() {}
+
+int basicattack::getDamage() {
+	return damage;
+}
+
+int basicattack::getNumber() {
+	return number;
+}
+
+int basicattack::attack(body::basicbody target) {
+	int totalDamage = 0;
+	for (int i = 0; number > i; i++) {
+		 totalDamage += target.damage(damage);
+	}
+	return totalDamage;
+}
